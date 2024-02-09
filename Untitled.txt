@@ -1,0 +1,36 @@
+title Tour some sugar
+
+participant main.js
+participant bands.js
+participant venues.js
+participant bookings.js
+
+participant databae.js
+
+
+
+
+main.js->bands.js: get bands HTML
+bands.js -> databae.js: get array of bands
+bands.js<--databae.js: return array of bands
+bands.js->databae.js: get array of venues
+bands.js<--databae.js:return venues
+main.js<--bands.js: return bands HTML
+note left of main.js: Display bands
+main.js->venues.js: get venues HTML
+venues.js->databae.js: get array of venues
+venues.js<--databae.js: return array of venues
+venues.js->databae.js: get array of bands
+venues.js<--databae.js: return array of bands
+main.js <-- venues.js: return venues HTML
+note left of main.js: Display venues
+main.js->bookings.js: get bookings HTMl
+bookings.js->databae.js:get array of bands
+bookings.js<--databae.js: return bands
+bookings.js->databae.js:get array of venues
+bookings.js<--databae.js:return venues
+bookings.js->databae.js: get array of bookings
+bookings.js<--databae.js: return bookings array
+main.js<--bookings.js: return bookings HTML
+note left of main.js: Display bookings HTML
+

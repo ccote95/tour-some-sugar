@@ -1,0 +1,23 @@
+.current-bookings {
+    border: 1px solid black;
+    padding: 1em;
+}
+
+.venues{
+    border: 1px solid black;
+    flex-basis: 45%;
+    padding: 1em;
+}
+
+.bands {
+    border: 1px solid black;
+    flex-basis: 45%;
+    margin-left: 20px;
+    padding: 1em;
+}
+
+.venue-band {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
