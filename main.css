@@ -1,12 +1,22 @@
+body {
+    background-color: rgb(226, 226, 161);
+}
+
+
 .current-bookings {
     border: 1px solid black;
     padding: 1em;
+    background-color:rgb(240, 151, 17);
+    box-shadow: 5px 5px 5px black;
+   
 }
 
 .venues{
     border: 1px solid black;
     flex-basis: 45%;
     padding: 1em;
+    background-color:rgb(240, 151, 17);
+    box-shadow: 5px 5px 5px black;
 }
 
 .bands {
@@ -14,10 +24,26 @@
     flex-basis: 45%;
     margin-left: 20px;
     padding: 1em;
+    background-color:rgb(240, 151, 17);
+    box-shadow: 5px 5px 5px black;
 }
 
 .venue-band {
     display: flex;
     justify-content: center;
     margin-top: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+    font-weight:bolder;
+    font-size:x-large;
+    
+}
+
+li {
+    background-color:bisque;
+    width: 50%;
+    margin-bottom: 10px;
 }
